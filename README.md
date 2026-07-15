@@ -9,6 +9,8 @@
 
 Построен на базе библиотеки [Playable](https://wix.github.io/playable/).
 
+Посмотреть [демо-версию](https://tomaa-dev.github.io/video-player-jslib/).
+
 ## Примеры
 
 Два рабочих примера:

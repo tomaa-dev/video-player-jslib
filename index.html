@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./favicon/favicon.ico" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style type="text/css">
     .video-player {
       width: 800px; 
@@ -34,7 +35,20 @@
     }
 
     .controls-spacer {
+      color: white;
+      font-family: "Roboto";
+
+    }
+
+    .progress-slider {
       flex-grow: 1;
+      display: flex;
+    }
+
+    .progress-panel {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
     }
   </style>
 </head>
@@ -54,10 +68,19 @@
       <button class="js-volume-button control-button">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
-      <div class="controls-spacer"></div>
-      <button class="js-fullscreen-button control-button">
-        <i class="fa fa-expand" aria-hidden="true"></i>
-      </button>
+      
+      <div class="progress-panel">
+        <div class="controls-spacer">
+          <span class="js-current-time"></span>
+        </div>
+        <div class="progress-slider"></div>
+        <div class="controls-spacer">
+          <span class="js-duration"></span>
+        </div>
+        <button class="js-fullscreen-button control-button">
+          <i class="fa fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

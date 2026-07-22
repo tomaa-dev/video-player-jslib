@@ -70,6 +70,10 @@
       display: inline-block;
       flex-shrink: 0;
       margin: -8px;
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in;
     }
 
     .white-border {
@@ -78,6 +82,11 @@
       border-color: white;
       box-shadow: 0 0 25px rgba(0,0,0,1);
     }
+
+    .progress-panel:hover .dot{
+      opacity: 1;
+      transition-timing-function: ease-out; 
+      }
   </style>
 </head>
 <body>
